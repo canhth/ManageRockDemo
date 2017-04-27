@@ -1,0 +1,21 @@
+//
+//  ImageDownloaderPrefixHeader.pch
+//  ImageDownloader
+//
+//  Created by thcanh on 4/26/17.
+//  Copyright © 2017 CanhTran. All rights reserved.
+//
+
+#ifndef ImageDownloaderPrefixHeader_pch
+#define ImageDownloaderPrefixHeader_pch
+
+#import "AppDelegate.h"
+#import "SSZipArchive.h"
+#import "JSONObject.h"
+#import "FileContent.h"
+#import "Downloader.h"
+#import "NSFileManager+ImageDownloader.h"
+#import "Utils.h"
+#import "Define.h"
+
+#endif /* ImageDownloaderPrefixHeader_pch */

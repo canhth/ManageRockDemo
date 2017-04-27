@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25752E371EAF34D6005D79AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E361EAF34D6005D79AE /* main.m */; };
+		25752E3A1EAF34D6005D79AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E391EAF34D6005D79AE /* AppDelegate.m */; };
+		25752E401EAF34D6005D79AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25752E3E1EAF34D6005D79AE /* Main.storyboard */; };
+		25752E421EAF34D6005D79AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25752E411EAF34D6005D79AE /* Assets.xcassets */; };
+		25752E451EAF34D6005D79AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25752E431EAF34D6005D79AE /* LaunchScreen.storyboard */; };
+		25752E511EAF36CB005D79AE /* Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E501EAF36CB005D79AE /* Downloader.m */; };
+		25752E541EAF36F1005D79AE /* JSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E531EAF36F1005D79AE /* JSONObject.m */; };
+		25752E571EAF3753005D79AE /* FileContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E561EAF3753005D79AE /* FileContent.m */; };
+		25752E5A1EAF379A005D79AE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E591EAF379A005D79AE /* HomeViewController.m */; };
+		25752E5D1EAF37E0005D79AE /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E5C1EAF37E0005D79AE /* ThumbnailViewController.m */; };
+		25752E601EAF37F8005D79AE /* ImagesBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E5F1EAF37F8005D79AE /* ImagesBrowserViewController.m */; };
+		25752E631EAF382E005D79AE /* HomeFileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E621EAF382E005D79AE /* HomeFileTableViewCell.m */; };
+		25752E661EAF3850005D79AE /* ThumbnailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E651EAF3850005D79AE /* ThumbnailCollectionViewCell.m */; };
+		25752E691EAF386A005D79AE /* BrowserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E681EAF386A005D79AE /* BrowserCollectionViewCell.m */; };
+		25752E841EB04140005D79AE /* NSFileManager+ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E811EB04140005D79AE /* NSFileManager+ImageDownloader.m */; };
+		25752E851EB04140005D79AE /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 25752E831EB04140005D79AE /* Utils.m */; };
+		3C93CF987660655D168C2DB7 /* libPods-ImageDownloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D2937F698EB1920D086C68 /* libPods-ImageDownloader.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0369CF72EA21BDBCD41BC919 /* Pods-ImageDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageDownloader/Pods-ImageDownloader.release.xcconfig"; sourceTree = "<group>"; };
+		0F7A033B53492DB6E77F2128 /* Pods-ImageDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageDownloader/Pods-ImageDownloader.debug.xcconfig"; sourceTree = "<group>"; };
+		25752E321EAF34D6005D79AE /* ImageDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25752E361EAF34D6005D79AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25752E381EAF34D6005D79AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		25752E391EAF34D6005D79AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		25752E3F1EAF34D6005D79AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25752E411EAF34D6005D79AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25752E441EAF34D6005D79AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25752E461EAF34D6005D79AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25752E4F1EAF36CB005D79AE /* Downloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Downloader.h; sourceTree = "<group>"; };
+		25752E501EAF36CB005D79AE /* Downloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Downloader.m; sourceTree = "<group>"; };
+		25752E521EAF36F1005D79AE /* JSONObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONObject.h; sourceTree = "<group>"; };
+		25752E531EAF36F1005D79AE /* JSONObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONObject.m; sourceTree = "<group>"; };
+		25752E551EAF3753005D79AE /* FileContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileContent.h; sourceTree = "<group>"; };
+		25752E561EAF3753005D79AE /* FileContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileContent.m; sourceTree = "<group>"; };
+		25752E581EAF379A005D79AE /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		25752E591EAF379A005D79AE /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		25752E5B1EAF37E0005D79AE /* ThumbnailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
+		25752E5C1EAF37E0005D79AE /* ThumbnailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
+		25752E5E1EAF37F8005D79AE /* ImagesBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesBrowserViewController.h; sourceTree = "<group>"; };
+		25752E5F1EAF37F8005D79AE /* ImagesBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesBrowserViewController.m; sourceTree = "<group>"; };
+		25752E611EAF382E005D79AE /* HomeFileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeFileTableViewCell.h; sourceTree = "<group>"; };
+		25752E621EAF382E005D79AE /* HomeFileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeFileTableViewCell.m; sourceTree = "<group>"; };
+		25752E641EAF3850005D79AE /* ThumbnailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailCollectionViewCell.h; sourceTree = "<group>"; };
+		25752E651EAF3850005D79AE /* ThumbnailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailCollectionViewCell.m; sourceTree = "<group>"; };
+		25752E671EAF386A005D79AE /* BrowserCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserCollectionViewCell.h; sourceTree = "<group>"; };
+		25752E681EAF386A005D79AE /* BrowserCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserCollectionViewCell.m; sourceTree = "<group>"; };
+		25752E7E1EB04140005D79AE /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		25752E801EB04140005D79AE /* NSFileManager+ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+ImageDownloader.h"; sourceTree = "<group>"; };
+		25752E811EB04140005D79AE /* NSFileManager+ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+ImageDownloader.m"; sourceTree = "<group>"; };
+		25752E821EB04140005D79AE /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		25752E831EB04140005D79AE /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		25752E871EB041AE005D79AE /* ImageDownloaderPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageDownloaderPrefixHeader.pch; sourceTree = "<group>"; };
+		F4D2937F698EB1920D086C68 /* libPods-ImageDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageDownloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25752E2F1EAF34D6005D79AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C93CF987660655D168C2DB7 /* libPods-ImageDownloader.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25752E291EAF34D6005D79AE = {
+			isa = PBXGroup;
+			children = (
+				25752E341EAF34D6005D79AE /* ImageDownloader */,
+				25752E331EAF34D6005D79AE /* Products */,
+				3C41E3750893099C67B23298 /* Pods */,
+				FFD5C6508A1A323B6A9A3144 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		25752E331EAF34D6005D79AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25752E321EAF34D6005D79AE /* ImageDownloader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25752E341EAF34D6005D79AE /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				25752E381EAF34D6005D79AE /* AppDelegate.h */,
+				25752E391EAF34D6005D79AE /* AppDelegate.m */,
+				25752E4D1EAF3672005D79AE /* Components */,
+				25752E4E1EAF3672005D79AE /* ViewControllers */,
+				25752E4C1EAF3672005D79AE /* Cells */,
+				25752E7D1EB04140005D79AE /* Helper */,
+				25752E3E1EAF34D6005D79AE /* Main.storyboard */,
+				25752E411EAF34D6005D79AE /* Assets.xcassets */,
+				25752E431EAF34D6005D79AE /* LaunchScreen.storyboard */,
+				25752E461EAF34D6005D79AE /* Info.plist */,
+				25752E351EAF34D6005D79AE /* Supporting Files */,
+			);
+			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		25752E351EAF34D6005D79AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25752E361EAF34D6005D79AE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25752E4C1EAF3672005D79AE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				25752E611EAF382E005D79AE /* HomeFileTableViewCell.h */,
+				25752E621EAF382E005D79AE /* HomeFileTableViewCell.m */,
+				25752E641EAF3850005D79AE /* ThumbnailCollectionViewCell.h */,
+				25752E651EAF3850005D79AE /* ThumbnailCollectionViewCell.m */,
+				25752E671EAF386A005D79AE /* BrowserCollectionViewCell.h */,
+				25752E681EAF386A005D79AE /* BrowserCollectionViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		25752E4D1EAF3672005D79AE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				25752E4F1EAF36CB005D79AE /* Downloader.h */,
+				25752E501EAF36CB005D79AE /* Downloader.m */,
+				25752E521EAF36F1005D79AE /* JSONObject.h */,
+				25752E531EAF36F1005D79AE /* JSONObject.m */,
+				25752E551EAF3753005D79AE /* FileContent.h */,
+				25752E561EAF3753005D79AE /* FileContent.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		25752E4E1EAF3672005D79AE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				25752E581EAF379A005D79AE /* HomeViewController.h */,
+				25752E591EAF379A005D79AE /* HomeViewController.m */,
+				25752E5B1EAF37E0005D79AE /* ThumbnailViewController.h */,
+				25752E5C1EAF37E0005D79AE /* ThumbnailViewController.m */,
+				25752E5E1EAF37F8005D79AE /* ImagesBrowserViewController.h */,
+				25752E5F1EAF37F8005D79AE /* ImagesBrowserViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		25752E7D1EB04140005D79AE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				25752E7E1EB04140005D79AE /* Define.h */,
+				25752E801EB04140005D79AE /* NSFileManager+ImageDownloader.h */,
+				25752E811EB04140005D79AE /* NSFileManager+ImageDownloader.m */,
+				25752E821EB04140005D79AE /* Utils.h */,
+				25752E831EB04140005D79AE /* Utils.m */,
+				25752E871EB041AE005D79AE /* ImageDownloaderPrefixHeader.pch */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3C41E3750893099C67B23298 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F7A033B53492DB6E77F2128 /* Pods-ImageDownloader.debug.xcconfig */,
+				0369CF72EA21BDBCD41BC919 /* Pods-ImageDownloader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFD5C6508A1A323B6A9A3144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4D2937F698EB1920D086C68 /* libPods-ImageDownloader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25752E311EAF34D6005D79AE /* ImageDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25752E491EAF34D6005D79AE /* Build configuration list for PBXNativeTarget "ImageDownloader" */;
+			buildPhases = (
+				FFF65A092CC18ADA5F3E2C34 /* [CP] Check Pods Manifest.lock */,
+				25752E2E1EAF34D6005D79AE /* Sources */,
+				25752E2F1EAF34D6005D79AE /* Frameworks */,
+				25752E301EAF34D6005D79AE /* Resources */,
+				96B594CB3A5347808D13EBA4 /* [CP] Embed Pods Frameworks */,
+				7AB6A0539DAC889F2DAD3639 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageDownloader;
+			productName = ImageDownloader;
+			productReference = 25752E321EAF34D6005D79AE /* ImageDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25752E2A1EAF34D6005D79AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = CanhTran;
+				TargetAttributes = {
+					25752E311EAF34D6005D79AE = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = S4L5HY6Q7D;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 25752E2D1EAF34D6005D79AE /* Build configuration list for PBXProject "ImageDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25752E291EAF34D6005D79AE;
+			productRefGroup = 25752E331EAF34D6005D79AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25752E311EAF34D6005D79AE /* ImageDownloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25752E301EAF34D6005D79AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25752E451EAF34D6005D79AE /* LaunchScreen.storyboard in Resources */,
+				25752E421EAF34D6005D79AE /* Assets.xcassets in Resources */,
+				25752E401EAF34D6005D79AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AB6A0539DAC889F2DAD3639 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageDownloader/Pods-ImageDownloader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96B594CB3A5347808D13EBA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageDownloader/Pods-ImageDownloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFF65A092CC18ADA5F3E2C34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25752E2E1EAF34D6005D79AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25752E541EAF36F1005D79AE /* JSONObject.m in Sources */,
+				25752E691EAF386A005D79AE /* BrowserCollectionViewCell.m in Sources */,
+				25752E601EAF37F8005D79AE /* ImagesBrowserViewController.m in Sources */,
+				25752E851EB04140005D79AE /* Utils.m in Sources */,
+				25752E841EB04140005D79AE /* NSFileManager+ImageDownloader.m in Sources */,
+				25752E3A1EAF34D6005D79AE /* AppDelegate.m in Sources */,
+				25752E371EAF34D6005D79AE /* main.m in Sources */,
+				25752E631EAF382E005D79AE /* HomeFileTableViewCell.m in Sources */,
+				25752E661EAF3850005D79AE /* ThumbnailCollectionViewCell.m in Sources */,
+				25752E571EAF3753005D79AE /* FileContent.m in Sources */,
+				25752E511EAF36CB005D79AE /* Downloader.m in Sources */,
+				25752E5D1EAF37E0005D79AE /* ThumbnailViewController.m in Sources */,
+				25752E5A1EAF379A005D79AE /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		25752E3E1EAF34D6005D79AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25752E3F1EAF34D6005D79AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		25752E431EAF34D6005D79AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25752E441EAF34D6005D79AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25752E471EAF34D6005D79AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		25752E481EAF34D6005D79AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25752E4A1EAF34D6005D79AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F7A033B53492DB6E77F2128 /* Pods-ImageDownloader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = S4L5HY6Q7D;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ImageDownloader/Helper/ImageDownloaderPrefixHeader.pch;
+				INFOPLIST_FILE = ImageDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.canh.tran.teaser.ImageDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageDownloader/Cells/Helper/ImageDownloader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		25752E4B1EAF34D6005D79AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0369CF72EA21BDBCD41BC919 /* Pods-ImageDownloader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = S4L5HY6Q7D;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ImageDownloader/Helper/ImageDownloaderPrefixHeader.pch;
+				INFOPLIST_FILE = ImageDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.canh.tran.teaser.ImageDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageDownloader/Cells/Helper/ImageDownloader-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25752E2D1EAF34D6005D79AE /* Build configuration list for PBXProject "ImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25752E471EAF34D6005D79AE /* Debug */,
+				25752E481EAF34D6005D79AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25752E491EAF34D6005D79AE /* Build configuration list for PBXNativeTarget "ImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25752E4A1EAF34D6005D79AE /* Debug */,
+				25752E4B1EAF34D6005D79AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25752E2A1EAF34D6005D79AE /* Project object */;
+}
